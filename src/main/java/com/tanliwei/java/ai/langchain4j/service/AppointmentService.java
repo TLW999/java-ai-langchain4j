@@ -1,0 +1,11 @@
+package com.tanliwei.java.ai.langchain4j.service;
+
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.tanliwei.java.ai.langchain4j.entity.Appointment;
+import org.springframework.stereotype.Service;
+
+
+public interface AppointmentService extends IService<Appointment> {
+
+    Appointment getOne(Appointment appointment);
+}
